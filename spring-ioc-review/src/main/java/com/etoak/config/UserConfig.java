@@ -15,10 +15,14 @@ public class UserConfig {
 		return new UserService();
 	}
 	@Bean
-	public UserAction userAction(@Qualifier("userService") UserService userService) {
-	
-		UserAction userAction= new UserAction();
+	public UserAction userAction(@Qualifier("userService")
+	UserService userService) {
+		UserAction userAction = new UserAction();
+		// userAction.setUserService(this.userService());
+		
+		// 配合@Qualifier使用
 		userAction.setUserService(userService);
 		return userAction;
 	}
+
 }
