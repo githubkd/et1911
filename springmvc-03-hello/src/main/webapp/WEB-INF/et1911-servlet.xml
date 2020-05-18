@@ -9,18 +9,11 @@
 		http://www.springframework.org/schema/context
 	    http://www.springframework.org/schema/context/spring-context-4.2.xsd
 	">
-	    <!-- 配置处理映射器  -->
-         <!--BeanNameUrlHandlerMapping:
-                   使bean的name属性作为url查找处理器
-         -->
+	    <!-- 配置映射器   使用bean的name属性作为url查找处理器-->
+        
         <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
-         <!-- 配置处理器适配器 -->
-         <!-- HttpRequestHandlerAdapter:
-                   能够处理HttpRequestHeandler类型处理器
-          -->
+         <!-- HttpRe -->
         <bean class="org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter"></bean>
-        <!-- 视图解析器 -->
-        <!-- InternalResourviewResolver -->
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
         <bean name="/Hello.action"  class="com.etoak.web.HelloController"></bean>
       

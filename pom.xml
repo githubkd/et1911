@@ -13,6 +13,7 @@
     <module>springmvc-01-hello</module>
     <module>spring-mvc</module>
     <module>spring-ioc-review2</module>
+    <module>springmvc-03-hello</module>
   </modules>
   <dependencies>
 	  <dependency>

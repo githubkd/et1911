@@ -13,9 +13,11 @@ public class HelloController implements HttpRequestHandler {
 	@Override
 	public void handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		  String name=request.getParameter("name");
-		  request.setAttribute("result",name);
-          request.getRequestDispatcher("/Hello.jsp").forward(request, response);
+		String name=request.getParameter("name");
+		System.out.println(name);
+		request.setAttribute("result", "hello"+name);
+		request.getRequestDispatcher("/Hello.jsp").forward(request, response);
+
 	}
 
 }

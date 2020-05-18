@@ -8,10 +8,10 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.etoak.et1911</groupId>
-  <artifactId>spring-mvc</artifactId>
+  <artifactId>springmvc-03-hello</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>spring-mvc Maven Webapp</name>
+  <name>springmvc-03-hello Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -22,6 +22,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>spring-mvc</finalName>
+    <finalName>springmvc-03-hello</finalName>
   </build>
 </project>
