@@ -14,6 +14,7 @@
     <module>spring-mvc</module>
     <module>spring-ioc-review2</module>
     <module>springmvc-03-hello</module>
+    <module>springmvc-02-hello</module>
   </modules>
   <dependencies>
 	  <dependency>
