@@ -22,6 +22,7 @@
     <module>springmvc-04-kd</module>
     <module>springmvc-05-kd</module>
     <module>springmvc-06-kd</module>
+    <module>springmvc-07-kd</module>
   </modules>
 
 	<dependencyManagement>
