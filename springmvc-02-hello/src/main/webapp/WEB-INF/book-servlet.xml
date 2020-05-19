@@ -14,4 +14,4 @@
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
         <bean name="/book.action"  class="com.etoak.web.HelloController"></bean>
       
-</beans>
+</beans>	
