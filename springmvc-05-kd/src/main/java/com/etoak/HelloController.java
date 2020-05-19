@@ -11,10 +11,10 @@ public class HelloController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String name=request.getParameter("name");
+		// request.setAttribute("result", name);
 		ModelAndView mv=new ModelAndView();
 		mv.setViewName("hello");
 		mv.addObject("result",name);
-		
 		return mv;
 	}
 
