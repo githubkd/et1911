@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h2>${result}</h2>
+	<h2>${result2}</h2>
 </body>
 </html>

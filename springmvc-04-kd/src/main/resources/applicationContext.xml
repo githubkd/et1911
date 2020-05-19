@@ -17,10 +17,18 @@
 	   </context:component-scan>
 	   
 	   <mvc:annotation-driven></mvc:annotation-driven>
-	  <bean
+	     <!-- 加载静态文件[交给tomcat]
+	     
+	     ** 代表可以是子文件
+	      -->
+	   <mvc:default-servlet-handler />
+	   <mvc:resources  location="classpath:/static/" mapping="/s/**/"></mvc:resources>
+	   <mvc:resources location="file:c:/Users/lenovo/Pictures/" mapping="/pic/**/"></mvc:resources>
+	   <bean
 		 class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		  <property name="prefix" value="/pages/" />
 		  <property name="suffix" value=".jsp" />
-	  </bean>
+	   </bean>
 </beans>
 
+ 
